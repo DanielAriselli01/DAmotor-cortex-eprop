@@ -158,7 +158,7 @@ class RBFConfig(BaseModel):
 
     # rb_neuron model parameters
     kp: float = Field(
-        default=1000.0,
+        default=1.0,
         description="Input gain (1000 ensures correct conversion from spikes/ms to spikes/s)",
     )
     base_rate: float = Field(default=0.0, description="Base firing rate in Hz")
